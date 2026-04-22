@@ -11,7 +11,7 @@ An immersive, professional-grade 3D virus genome visualization and analysis plat
 
 ---
 
-## 🔬 Core Features
+## Core Features
 
 ### 1. Interactive 3D Simulation
 Explore biologically accurate 3D models of major viruses (SARS-CoV-2, Ebola, HIV-1, Influenza, etc.).
@@ -33,7 +33,7 @@ A dedicated research dashboard for deep-dive bioinformatics.
 
 ---
 
-## 🛠 Technical Stack
+## Technical Stack
 
 - **Frontend**: [React 19](https://reactjs.org/)
 - **3D Rendering**: [React Three Fiber](https://github.com/pmndrs/react-three-fiber) / [Three.js](https://threejs.org/)
@@ -43,7 +43,7 @@ A dedicated research dashboard for deep-dive bioinformatics.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/en/) (v18.0.0 or higher)
@@ -71,7 +71,7 @@ npm run build
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 src/
@@ -85,12 +85,12 @@ src/
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🧪 Scientific Context
+## Scientific Context
 
 The genomic sequences and protein descriptions utilized in this application are modeled after open-source data from [NCBI GenBank](https://www.ncbi.nlm.nih.gov/genbank/) and [GISAID](https://www.gisaid.org/). This tool is designed for educational and visualization purposes.

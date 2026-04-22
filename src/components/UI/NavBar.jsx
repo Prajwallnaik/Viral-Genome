@@ -40,7 +40,18 @@ export default function NavBar({ activeTab, setActiveTab }) {
 
       {/* ── LEFT: Brand ── */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', flexShrink: 0 }}>
-        <VirusLogo size={36} color="#00e5ff" glow={true} />
+        <img 
+          src="/realistic_virus_logo.png" 
+          alt="Virus Logo" 
+          style={{ 
+            width: '42px', 
+            height: '42px', 
+            objectFit: 'contain', 
+            borderRadius: '50%',
+            boxShadow: '0 0 15px rgba(0,229,255,0.4)',
+            border: '1px solid rgba(0,229,255,0.3)'
+          }} 
+        />
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
           <div style={{
             fontFamily: 'var(--font-display)',
@@ -53,7 +64,7 @@ export default function NavBar({ activeTab, setActiveTab }) {
             backgroundClip: 'text',
             lineHeight: 1.15,
           }}>
-            Viral Genome
+            Virus Genome
           </div>
           <div style={{
             fontSize: '0.55rem',

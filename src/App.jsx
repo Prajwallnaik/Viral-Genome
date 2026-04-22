@@ -8,6 +8,8 @@ import VirusDrawer from './components/UI/VirusDrawer';
 import ControlsPanel from './components/UI/ControlsPanel';
 import InfoPanel from './components/UI/InfoPanel';
 import AnalysisDashboard from './components/UI/AnalysisDashboard';
+import HeroLabel from './components/UI/HeroLabel';
+
 
 // Navbar height constant — used to offset panels below it
 const NAV_H = '72px';
@@ -57,6 +59,8 @@ export default function App() {
         />
       </div>
 
+
+
       {/* ──────────────────────────────────────────────
           Layer 1 : Top Navbar
           ────────────────────────────────────────────── */}
@@ -97,41 +101,16 @@ export default function App() {
               <VirusDrawer viruses={viruses} selectedIdx={selectedIdx} onSelect={setSelectedIdx} />
             </div>
 
-            {/* ── CENTER COLUMN : Virus name/hero label (bottom aligned) ── */}
             <div style={{
               gridColumn: '2', gridRow: '1 / 3',
               display: 'flex', flexDirection: 'column',
               justifyContent: 'flex-end', alignItems: 'center',
-              paddingBottom: '1.5rem',
+              paddingBottom: '2.5rem',
               textAlign: 'center',
               pointerEvents: 'none',
             }}>
               <AnimatePresence mode="wait">
-                <motion.div
-                  key={selectedVirus.id}
-                  initial={{ opacity: 0, y: 24 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -16 }}
-                  transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-                >
-                  <div className="t-label" style={{ marginBottom: '0.35rem', color: selectedVirus.color, letterSpacing: '0.14em' }}>
-                    {selectedVirus.family}
-                  </div>
-                  <div className="t-display" style={{
-                    fontSize: 'clamp(1.8rem, 3.5vw, 3rem)',
-                    color: 'var(--text-primary)',
-                    textShadow: `0 0 40px ${selectedVirus.color}55`,
-                  }}>
-                    {selectedVirus.name}
-                  </div>
-                  <div style={{ marginTop: '0.7rem', display: 'flex', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-                    <span className="pill">
-                      <span style={{ width: 6, height: 6, borderRadius: '50%', background: selectedVirus.color, display: 'inline-block' }} />
-                      {selectedVirus.rnaType}
-                    </span>
-                    <span className="pill">{selectedVirus.shape.replace(/_/g, ' ')}</span>
-                  </div>
-                </motion.div>
+                <HeroLabel key={selectedVirus.id} virus={selectedVirus} />
               </AnimatePresence>
             </div>
 

@@ -26,19 +26,19 @@ export default function VirusDrawer({ viruses, selectedIdx, onSelect }) {
       }}
     >
       {/* ── Header ── */}
-      <div style={{ padding: '0.85rem 0.85rem 0', borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: '0.7rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.6rem' }}>
-          <span style={{ fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)' }}>
+      <div style={{ padding: '0.55rem 0.75rem 0', borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: '0.45rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+          <span style={{ fontSize: '0.6rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.45)' }}>
             Organisms
           </span>
-          <span style={{ fontSize: '0.65rem', fontWeight: 700, color: 'var(--accent)', fontFamily: 'var(--font-display)' }}>
+          <span style={{ fontSize: '0.6rem', fontWeight: 700, color: 'var(--accent)', fontFamily: 'var(--font-display)' }}>
             {viruses.length}
           </span>
         </div>
 
         {/* ── Search ── */}
         <div style={{ position: 'relative' }}>
-          <span style={{ position: 'absolute', left: '0.55rem', top: '50%', transform: 'translateY(-50%)', color: 'rgba(255,255,255,0.25)', fontSize: '0.75rem', pointerEvents: 'none' }}>⌕</span>
+          <span style={{ position: 'absolute', left: '0.5rem', top: '50%', transform: 'translateY(-50%)', color: 'rgba(255,255,255,0.25)', fontSize: '0.7rem', pointerEvents: 'none' }}>⌕</span>
           <input
             type="text"
             placeholder="Search organisms..."
@@ -48,9 +48,9 @@ export default function VirusDrawer({ viruses, selectedIdx, onSelect }) {
               width: '100%',
               background: 'rgba(255,255,255,0.05)',
               border: '1px solid rgba(255,255,255,0.1)',
-              borderRadius: 8,
-              padding: '0.45rem 0.6rem 0.45rem 1.7rem',
-              fontSize: '0.75rem',
+              borderRadius: 7,
+              padding: '0.3rem 0.5rem 0.3rem 1.5rem',
+              fontSize: '0.68rem',
               color: '#fff',
               outline: 'none',
               fontFamily: 'var(--font-body)',
@@ -63,10 +63,10 @@ export default function VirusDrawer({ viruses, selectedIdx, onSelect }) {
       </div>
 
       {/* ── List ── */}
-      <div style={{ flex: 1, overflowY: 'auto', padding: '0.5rem 0.6rem' }}>
+      <div style={{ flex: 1, overflowY: 'auto', padding: '0.3rem 0.5rem' }}>
         <AnimatePresence>
           {filtered.length === 0 ? (
-            <div style={{ padding: '1.5rem', textAlign: 'center', fontSize: '0.75rem', color: 'rgba(255,255,255,0.25)' }}>
+            <div style={{ padding: '1rem', textAlign: 'center', fontSize: '0.7rem', color: 'rgba(255,255,255,0.25)' }}>
               No results found
             </div>
           ) : (
@@ -82,39 +82,39 @@ export default function VirusDrawer({ viruses, selectedIdx, onSelect }) {
                   style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '0.65rem',
-                    padding: '0.65rem 0.6rem',
-                    borderRadius: 10,
+                    gap: '0.5rem',
+                    padding: '0.38rem 0.5rem',
+                    borderRadius: 8,
                     border: `1px solid ${active ? v.color + '44' : 'transparent'}`,
                     background: active ? `${v.color}0e` : 'transparent',
                     color: '#fff',
                     cursor: 'pointer',
                     textAlign: 'left',
                     width: '100%',
-                    marginBottom: '0.15rem',
+                    marginBottom: '0.08rem',
                     transition: 'background 0.2s, border-color 0.2s',
                   }}
                 >
                   {/* Color indicator */}
                   <div style={{
-                    width: 8, height: 8, borderRadius: '50%',
+                    width: 7, height: 7, borderRadius: '50%',
                     background: v.color, flexShrink: 0,
-                    boxShadow: active ? `0 0 8px ${v.color}` : 'none',
+                    boxShadow: active ? `0 0 6px ${v.color}` : 'none',
                     transition: 'box-shadow 0.3s',
                   }} />
 
                   {/* Text */}
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{
-                      fontSize: '0.82rem',
+                      fontSize: '0.75rem',
                       fontWeight: active ? 600 : 400,
                       color: active ? '#ffffff' : 'rgba(255,255,255,0.75)',
                       whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
-                      lineHeight: 1.3,
+                      lineHeight: 1.2,
                     }}>
                       {v.name}
                     </div>
-                    <div style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.35)', marginTop: '1px' }}>
+                    <div style={{ fontSize: '0.58rem', color: 'rgba(255,255,255,0.35)', marginTop: '1px' }}>
                       {v.rnaType}
                     </div>
                   </div>
@@ -123,7 +123,7 @@ export default function VirusDrawer({ viruses, selectedIdx, onSelect }) {
                   {active && (
                     <motion.div
                       layoutId="activeBar"
-                      style={{ width: 3, height: 22, borderRadius: 2, background: v.color, flexShrink: 0 }}
+                      style={{ width: 3, height: 16, borderRadius: 2, background: v.color, flexShrink: 0 }}
                     />
                   )}
                 </motion.button>

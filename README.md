@@ -1,12 +1,12 @@
-# Viral Genome: 3D RNA Simulation Lab
+# Virus Genome: 3D RNA Simulation Lab
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-An immersive, professional-grade 3D viral genome visualization and analysis platform. Built with **React** and **Three.js**, this application allows researchers and students to explore viral structures, simulate genomic mutations in real-time, and analyze complex proteomic data in a high-fidelity laboratory environment.
+An immersive, professional-grade 3D virus genome visualization and analysis platform. Built with **React** and **Three.js**, this application allows researchers and students to explore viral structures, simulate genomic mutations in real-time, and analyze complex proteomic data in a high-fidelity laboratory environment.
 
-![Viral Genome Simulation](https://img.shields.io/badge/Status-Research_Ready-00e5ff?style=flat-square)
+![Virus Genome Simulation](https://img.shields.io/badge/Status-Research_Ready-00e5ff?style=flat-square)
 
 ---
 
@@ -49,7 +49,7 @@ A dedicated research dashboard for deep-dive bioinformatics.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/viral-genome-sim.git
+   git clone https://github.com/yourusername/virus-genome-sim.git
    ```
 2. Install dependencies:
    ```bash

@@ -58,7 +58,7 @@ export default function HeroScene({ virus, sequence, speed, showShell, rnaVisibl
 
       {/* Virus 3D Object */}
       <Suspense fallback={null}>
-        <Float speed={1.8} rotationIntensity={0.3} floatIntensity={0.6}>
+        <Float speed={1.8} rotationIntensity={0.3} floatIntensity={0.6} position={[0, 1.5, 0]}>
           <VirusModels
             virus={virus}
             sequence={sequence}

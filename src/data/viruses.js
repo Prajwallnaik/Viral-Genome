@@ -14,8 +14,8 @@ export const viruses = [
     proteins: [
       { name: "Spike (S)", function: "Host cell entry via ACE2 receptor binding" },
       { name: "Membrane (M)", function: "Drives virus assembly and shape definition" },
-      { name: "Envelope (E)", function: "Viral assembly, budding, and pathogenesis" },
-      { name: "Nucleocapsid (N)", function: "Packages the positive-strand viral RNA genome" }
+      { name: "Envelope (E)", function: "Virus assembly, budding, and pathogenesis" },
+      { name: "Nucleocapsid (N)", function: "Packages the positive-strand virus RNA genome" }
     ],
     lineages: ["B.1.1.7 (Alpha)", "B.1.351 (Beta)", "P.1 (Gamma)", "B.1.617.2 (Delta)", "B.1.1.529 (Omicron)"],
     riskMetrics: { transmissibility: 0.9, mortality: 0.15, immuneEscape: 0.85, stability: 0.7 }
@@ -204,7 +204,7 @@ export const viruses = [
       { name: "Envelope (E)", function: "Host receptor binding" },
       { name: "PrM / M", function: "Protection of E protein" },
       { name: "NS3 Protease", function: "RNA helicase activity" },
-      { name: "NS5 Polymerase", function: "Replication of viral genome" }
+      { name: "NS5 Polymerase", function: "Replication of virus genome" }
     ],
     lineages: ["Serotype 1 (DENV-1)", "Serotype 2 (DENV-2)", "Serotype 3 (DENV-3)", "Serotype 4 (DENV-4)"],
     riskMetrics: { transmissibility: 0.7, mortality: 0.04, immuneEscape: 0.45, stability: 0.6 }

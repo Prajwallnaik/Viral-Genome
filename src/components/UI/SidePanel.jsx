@@ -8,7 +8,7 @@ function SidePanel({ selectedVirus }) {
       <header>
         <h1 className="text-gradient" style={{ fontSize: '1.8rem', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
           <ShieldAlert size={28} color="#00f0ff" />
-          Viral Genomics
+          Virus Genomics
         </h1>
         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
           Realtime 3D simulation of RNA mutation dynamics.
